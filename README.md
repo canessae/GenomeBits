@@ -1,2 +1,2 @@
 # GenomeBits
-We are here developing and documenting the open version of the source code (scripts) used for generating
+We are here developing and documenting the open version of the source code (scripts) used for a signal analysis of the sequenced genome. In this study we deal with a new type of finite alternating sum series having independently distributed terms associated with binary (0,1) indicators for the nucleotide bases to characterise isolates. Our original method provides additional information to alternative conventional Similarity comparisons and Discrete Fourier transformation approaches. This new method could help in genome variants surveillance -work is in progress.
