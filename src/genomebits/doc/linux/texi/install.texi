@@ -1,0 +1,115 @@
+
+@node Install
+@chapter Install
+
+@code{genomebits} is an analyzing tool for uncovering characteristics signals from genome (FASTA) sequences.
+
+To install/uninstall @code{genomebits} you can simply mouse click on the icon for the
+@code{genomebits} '@code{.deb}' binary file, or by means of command line in 
+which you need to install first some extra packages and their dependencies. 
+
+
+@menu
+* Manual Install::
+* Uninstall::
+* Updates::
+@end menu
+
+
+@node Manual Install
+@section Manual Install
+@section The simple way
+In order to install the package you can use the following command as super user (root):
+@example
+@cartouche
+   sudo apt install ./genomebits-1.0.x-Linux.deb
+@end cartouche
+@end example
+The @code{apt} command will install @code{genomebits} and some necessary dependencies.
+
+@section The hard way
+
+If your @code{apt} system does not support your local file installing, 
+you need to install first some extra packages and 
+their dependencies. 
+
+You can check the list of needed packages by using the following command: 
+@example
+@cartouche
+   dpkg -I genomebits-1.0.x-Linux.deb 
+@end cartouche
+@end example
+In '@code{Depends:}' it is possibile to find the list of the required packages.
+These are: @code{perl, python-tk, python-numpy, python2}, and @code{gnuplot}.
+
+To install the required packages (listed with the command above) issue the command:
+'@code{sudo apt-get install <pkg1> <pkg2>}' and so on. For example,
+
+@sp 1
+@example
+   sudo apt-get install python-tk, python-numpy  @dots{} 
+@end example
+@sp 1
+
+Then, to install the @code{genomebits} @code{(.deb)} package anew type the command:
+
+@example
+@cartouche
+     sudo dpkg -i genomebits-1.0.x-Linux.deb 
+@end cartouche
+@end example
+
+An @code{genomebits} launcher icon will appear in your @code{Show Applications} of Linux Ubuntu Desktop 
+as shown in Fig.1.
+
+
+@sp 2
+@c ----------------------------- Figure
+@c \epsfxsize=60pt
+@iftex
+@tex
+\input epsf
+\centerline{\epsfbox{gb-1.ps}}
+@end tex
+@end iftex
+@ifhtml
+@c <img src="gb-1.jpg" align="center">
+@image{gb-1}
+@end ifhtml
+@c -----------------------------End  Figure
+@center @b{Fig.1}: @emph{Launcher icon for} @code{genomebits} @emph{listed in} @emph{Ubuntu Desktop's} @code{Show Applications}.
+@sp 2
+
+
+@b{NOTE}: The @code{genomebits} running shell scripts and data files can be found at: 
+
+@sp 1
+@example
+     /opt/genomebits/bin
+     /opt/genomebits/doc
+     /opt/genomebits/icons
+     /opt/genomebits/scripts
+@end example
+
+
+@sp 2
+
+@node Uninstall
+@section Uninstall
+
+In order to uninstall the @code{openEyA} @code{(.deb)} package type the following 
+command (and check that the @code{/opt/openeya-yt} directory is now empty!):
+
+@example
+@cartouche
+     sudo dpkg -r genomebits
+@end cartouche
+@end example
+
+
+@node Updates
+@section Updates
+
+Check for updates of @code{genomebits} at GitHub: @code{https://github.com}
+A connection to the Internet is needed to download any future releases.
+

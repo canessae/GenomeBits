@@ -1,0 +1,148 @@
+
+@c =================== Contents of Manual On-line
+@iftex
+@menu
+* About::
+* Requirements::
+* Install::
+* How To::
+@end menu
+@end iftex
+@c =================== Contents of Manual On-line
+
+
+@node About
+@chapter About @code{genomebits}
+
+@code{genomebits} is the Graphics User Interface (GUI) to the signal analysis method published in: 
+Genes 2021; 12(7):973 --doi.org/10.3390/genes12070973,
+to uncover distinctive patterns regarding the intrinsic data organization of complete genomics sequences 
+of (A)denine, (C)ytosine, (G)uanine and (T)hymine according to its progression along the nucleotide 
+bases position (bp).  It is based on a finite alternating sum having independently distributed 
+terms mapped into four binary projections for the A,C,T,G nucleotide bases.
+
+@cartouche
+The present Graphics User Interface (GUI) for @code{genomebits} could be useful for 
+the quantitative examination of distinctive patterns of complete genome data, such as
+the ongoing Human CoV-2 genome variants by using, for example, available GISAID FASTA sequences
+from www.gisaid.org
+@end cartouche
+
+We deal here with the simplest alternating sum series 
+@tex
+$$ 
+     E_{\alpha,N}(X) = \sum_{k=1}^N (-1)^{k-1}X_{\alpha,k} \;\;\; ,  @ @ @ @ @ @ @ @ (1)
+$$
+@end tex
+satisfying the following relation
+@tex
+$$
+     X_{\alpha,N} = | E_{\alpha,N}(X) - E_{\alpha,N-1}(X) | \;\;\; ,                                   
+$$
+@end tex
+where the variable @math{\alpha = A,C,T,G} is in correspondence with one of the four nucleotide 
+bases, and the individual terms @math{X_{k}} are associated with binary 0 or 1 values according to 
+its presence along the complete genome sequences of length @math{N}. In this mapping, the arithmetic 
+progression carries positive and negative signs @math{(-1)^{k-1}} and a finite non-zero first moment 
+of the independently distributed variables @math{X_{k,\alpha}}. Analyzing genomics sequencing via 
+this type of finite alternating sums allow to extract unique features at each bp with a small degree 
+of noise variations. This mapping into binary (0,1) indicators for the genome sequences is motivated 
+by previous studies on the three-base periodicity characteristic of protein-coding DNA sequences.
+
+
+@sp 2
+
+@menu
+* genomebits Features::
+@end menu
+
+
+@node genomebits Features
+@section @code{genomebits} GUI Features
+
+The @code{genomebits} GUI integrates different technologies under Linux O.S. @value{ubuntu} to 
+facilitate the calculations of, and the plotting of results obtained by, Eqn.(1) with just one click!
+
+@code{genomebits} allows to save all single, or paired, outputs entering 
+a (given set of) complete genomics sequences in FASTA format as the only input.
+
+@emph{The FASTA format is a text-based format for representing 
+either nucleotide sequences or amino acid (protein) sequences, in which nucleotides or amino 
+acids are represented using single-letter codes: e.g., A,C,T,G. The format also allows for 
+sequence names and comments to precede the sequences. The format originates from the FASTA 
+software package, but has now become a near universal standard in the field of bioinformatics. 
+-See Wikipedia: https://en.wikipedia.org/wiki/FASTA_format}
+
+Example of FASTA data file containing more than one (concatenated) genome sequence
+separated by the math symbol '@math{>}':
+@smallexample 
+@cartouche
+>hCoV-19/Italy/LAZ-AMC-202105034047-DS/2021|EPI_ISL_1970570|2021-05-03 
+TAAAGGTTTATACCTTCCCAGGTAACAAACCAACCAACTTTCGATCTCTTGTAGATCTGTTCTCTAAACGAACTTTAAAA 
+TCTGTGTGGCTGTCACTCGGCTGCATGCTTAGTGCACTCACGCAGTATAATTAATAACTAATTACTGTCGTTGACAGGAC 
+ACGAGTAACTCGTCTATCTTCTGCAGGCTGCTTACGGTTTCGTCCGTTTTGCAGCCGATCATCAGCACATCTAGGTTTTG 
+TCCGGGTGTGACCGAAAGGTAAGATGGAGAGCCTTGTCCCTGGTTTCAACGAGAAAACACACGTCCAACTCAGTTTGCCT 
+GTTTTACAGGTTCGCGACGTGCTCGTACGTGGCTTTGGAGACTCCGTGGAGGAGGTCTTATCAGAGGCACGTCAACATCT 
+  ... 
+    ...  
+>hCoV-19/Italy/TAA-IGA-1900588747/2021|EPI_ISL_2318924|2021-05-12
+AAGGTTTATACCTTCCCAGGTAACAAACCAACCAACTTTCGATCTCTTGTAGATCTGTTCTCTAAACGAACTTTAAAATC
+TGTGTGGCTGTCACTCGGCTGCATGCTTAGTGCACTCACGCAGTATAATTAATAACTAATTACTGTCGTTGACAGGACAC
+GAGTAACTCGTCTATCTTCTGCAGGCTGCTTACGGTTTCGTCCGTTTTGCAGCCGATCATCAGCACATCTAGGTTTTGTC
+CGGGTGTGACCGAAAGGTAAGATGGAGAGCCTTGTCCCTGGTTTCAACGAGAAAACACACGTCCAACTCAGTTTGCCTGT
+TTTACAGGTTCGCGACGTGCTCGTACGTGGCTTTGGAGACTCCGTGGAGGAGGTCTTATCAGAGGCACGTCAACATCTTA
+  ... 
+    ...  
+@end cartouche
+@end smallexample 
+
+@emph{Note:} @code{genomebits} considers samples with A,C,T,G sequences ONLY! for 
+(up to two) given Countries corresponding to genomics sequence data from (up to six) given 
+variants/species and it discards uncompleted sequences containing codification 
+errors (usually denoted with '@math{NNNNN}s' and other letters).
+
+@*
+In brief, @code{genomebits} from (up to two) selected Countries for (up to six) given 
+variants/species allows to
+@*
+@itemize @minus
+@item @b{Run alternating sums in Eqn.(1)} for up to six-@emph{times}-two inputs of FASTA
+files containing (@emph{i.e.}, concatenating) more than one genome sequence each.
+@*
+@item @b{Separate concatenated genome sequences and save in single FASTA files} (for each Country),
+which may be containing in a single FASTA input file including more than one genome sequence. 
+@*
+@item @b{Get single files for each of the four nucleotide bases} @math{A,C,T,G} associated with 
+binary 0 or 1 values according to its presence along the complete single genome sequences.
+@*
+@item @b{Get the alternating sums results in single files for the four nucleotide
+bases} @math{A,C,T,G} associated with binary 0 or 1 
+values according to its presence along the genome sequences.
+@*
+@item @b{Plot the alternating sums of the binary data files to compare behaviour of the 
+pairs @math{A,T} and @math{C,G} nucleotide bases versus bases position (bp)}.
+@*
+@item @b{Compare in one plot the alternating sums results versus bases position (bp)}
+for all four nucleotide bases @math{A,C,T,G} associated with binary 0 or 1
+values according to its presence along the genome sequences for each Country.
+@*
+@item @b{Plot the alternating sums results versus bases position (bp)}
+for the four nucleotide bases @math{A,C,T,G} associated with binary 0 or 1
+values according to its presence along the genome sequences @emph{for each} Country. 
+@*
+@item @b{Plot the alternating sums results versus bases position (bp)}
+for the four nucleotide bases @math{A,C,T,G} associated with binary 0 or 1
+values according to its presence along the genome sequences @emph{for both}
+Countries (if given as input). 
+@*
+@item @b{Plot in one image all the @code{genomebits} GUI results versus bases position (bp)}
+for each nucleotide base @math{A,C,T} or @math{G} associated with binary 0 or 1
+values according to its presence along the genome sequences for 
+up to six variants/species and up to 4 FASTA files by Country.
+@*
+@item @b{Compare visualmente the @code{genomebits} GUI results versus bases position (bp)}
+for (up to six) given variants/species and (up to two) selected Countries,
+with the results in the paper @emph{"Uncovering Signals from the Coronavirus Genome"} -see:
+Genes 2021; 12(7):973. https://doi.org/10.3390/genes12070973 
+@end itemize
+

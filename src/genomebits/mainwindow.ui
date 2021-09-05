@@ -1,0 +1,2027 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>885</width>
+    <height>758</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>9</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">GenomeBits</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="icons.qrc">
+    <normaloff>:/icons/icon.ico</normaloff>:/icons/icon.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_22">
+    <item>
+     <widget class="QTabWidget" name="tabs">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="Setup">
+       <property name="accessibleName">
+        <string/>
+       </property>
+       <attribute name="title">
+        <string>Setup</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_9">
+          <item>
+           <widget class="QPushButton" name="selectAllButton">
+            <property name="text">
+             <string>Select all</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="unselectAllButton">
+            <property name="text">
+             <string>Unselect all</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_1">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="title">
+           <string>Variant #1</string>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <layout class="QFormLayout" name="formLayout_20">
+             <item row="0" column="0">
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>Country</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QComboBox" name="comboBox_1a">
+               <property name="editable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QPushButton" name="pushButton_1a">
+               <property name="text">
+                <string>Browse FASTA</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <layout class="QHBoxLayout" name="horizontalLayout_10">
+               <item>
+                <widget class="QLineEdit" name="lineEdit_1a">
+                 <property name="text">
+                  <string>../scripts/x-inputs-examples/4-a-gisaid_hcov-19_2021_05_31_00.fasta</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="cleanButton_1a">
+                 <property name="text">
+                  <string>Clean</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QFormLayout" name="formLayout_22">
+             <item row="1" column="0">
+              <widget class="QPushButton" name="pushButton_1b">
+               <property name="text">
+                <string>Browse FASTA</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QComboBox" name="comboBox_1b">
+               <property name="editable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_2">
+               <property name="text">
+                <string>Country</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <layout class="QHBoxLayout" name="horizontalLayout_11">
+               <item>
+                <widget class="QLineEdit" name="lineEdit_1b"/>
+               </item>
+               <item>
+                <widget class="QPushButton" name="cleanButton_1b">
+                 <property name="text">
+                  <string>Clean</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_2">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="title">
+           <string>Variant #2</string>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <layout class="QFormLayout" name="formLayout_25">
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_5">
+               <property name="text">
+                <string>Country</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QComboBox" name="comboBox_2a">
+               <property name="editable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QPushButton" name="pushButton_2a">
+               <property name="text">
+                <string>Browse FASTA</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <layout class="QHBoxLayout" name="horizontalLayout_12">
+               <item>
+                <widget class="QLineEdit" name="lineEdit_2a"/>
+               </item>
+               <item>
+                <widget class="QPushButton" name="cleanButton_2a">
+                 <property name="text">
+                  <string>Clean</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QFormLayout" name="formLayout_26">
+             <item row="1" column="0">
+              <widget class="QPushButton" name="pushButton_2b">
+               <property name="text">
+                <string>Browse FASTA</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QComboBox" name="comboBox_2b">
+               <property name="editable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_6">
+               <property name="text">
+                <string>Country</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <layout class="QHBoxLayout" name="horizontalLayout_13">
+               <item>
+                <widget class="QLineEdit" name="lineEdit_2b"/>
+               </item>
+               <item>
+                <widget class="QPushButton" name="cleanButton_2b">
+                 <property name="text">
+                  <string>Clean</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_3">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="title">
+           <string>Variant #3</string>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <layout class="QFormLayout" name="formLayout_29">
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_9">
+               <property name="text">
+                <string>Country</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QComboBox" name="comboBox_3a">
+               <property name="editable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QPushButton" name="pushButton_3a">
+               <property name="text">
+                <string>Browse FASTA</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <layout class="QHBoxLayout" name="horizontalLayout_14">
+               <item>
+                <widget class="QLineEdit" name="lineEdit_3a"/>
+               </item>
+               <item>
+                <widget class="QPushButton" name="cleanButton_3a">
+                 <property name="text">
+                  <string>Clean</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QFormLayout" name="formLayout_30">
+             <item row="1" column="0">
+              <widget class="QPushButton" name="pushButton_3b">
+               <property name="text">
+                <string>Browse FASTA</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QComboBox" name="comboBox_3b">
+               <property name="editable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_10">
+               <property name="text">
+                <string>Country</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <layout class="QHBoxLayout" name="horizontalLayout_15">
+               <item>
+                <widget class="QLineEdit" name="lineEdit_3b"/>
+               </item>
+               <item>
+                <widget class="QPushButton" name="cleanButton_3b">
+                 <property name="text">
+                  <string>Clean</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_4">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="title">
+           <string>Variant #4</string>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <item>
+            <layout class="QFormLayout" name="formLayout_31">
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_11">
+               <property name="text">
+                <string>Country</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QComboBox" name="comboBox_4a">
+               <property name="editable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QPushButton" name="pushButton_4a">
+               <property name="text">
+                <string>Browse FASTA</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <layout class="QHBoxLayout" name="horizontalLayout_16">
+               <item>
+                <widget class="QLineEdit" name="lineEdit_4a"/>
+               </item>
+               <item>
+                <widget class="QPushButton" name="cleanButton_4a">
+                 <property name="text">
+                  <string>Clean</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QFormLayout" name="formLayout_32">
+             <item row="1" column="0">
+              <widget class="QPushButton" name="pushButton_4b">
+               <property name="text">
+                <string>Browse FASTA</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QComboBox" name="comboBox_4b">
+               <property name="editable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_12">
+               <property name="text">
+                <string>Country</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <layout class="QHBoxLayout" name="horizontalLayout_17">
+               <item>
+                <widget class="QLineEdit" name="lineEdit_4b"/>
+               </item>
+               <item>
+                <widget class="QPushButton" name="cleanButton_4b">
+                 <property name="text">
+                  <string>Clean</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_5">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="title">
+           <string>Variant #5</string>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_5">
+           <item>
+            <layout class="QFormLayout" name="formLayout_33">
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_13">
+               <property name="text">
+                <string>Country</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QComboBox" name="comboBox_5a">
+               <property name="editable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QPushButton" name="pushButton_5a">
+               <property name="text">
+                <string>Browse FASTA</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <layout class="QHBoxLayout" name="horizontalLayout_18">
+               <item>
+                <widget class="QLineEdit" name="lineEdit_5a"/>
+               </item>
+               <item>
+                <widget class="QPushButton" name="cleanButton_5a">
+                 <property name="text">
+                  <string>Clean</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QFormLayout" name="formLayout_34">
+             <item row="1" column="0">
+              <widget class="QPushButton" name="pushButton_5b">
+               <property name="text">
+                <string>Browse FASTA</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QComboBox" name="comboBox_5b">
+               <property name="editable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_14">
+               <property name="text">
+                <string>Country</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <layout class="QHBoxLayout" name="horizontalLayout_19">
+               <item>
+                <widget class="QLineEdit" name="lineEdit_5b"/>
+               </item>
+               <item>
+                <widget class="QPushButton" name="cleanButton_5b">
+                 <property name="text">
+                  <string>Clean</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_6">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="title">
+           <string>Variant #6</string>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_6">
+           <item>
+            <layout class="QFormLayout" name="formLayout_37">
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_17">
+               <property name="text">
+                <string>Country</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QComboBox" name="comboBox_6a">
+               <property name="editable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QPushButton" name="pushButton_6a">
+               <property name="text">
+                <string>Browse FASTA</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <layout class="QHBoxLayout" name="horizontalLayout_20">
+               <item>
+                <widget class="QLineEdit" name="lineEdit_6a"/>
+               </item>
+               <item>
+                <widget class="QPushButton" name="cleanButton_6a">
+                 <property name="text">
+                  <string>Clean</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QFormLayout" name="formLayout_38">
+             <item row="1" column="0">
+              <widget class="QPushButton" name="pushButton_6b">
+               <property name="text">
+                <string>Browse FASTA</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QComboBox" name="comboBox_6b">
+               <property name="editable">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_18">
+               <property name="text">
+                <string>Country</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <layout class="QHBoxLayout" name="horizontalLayout_21">
+               <item>
+                <widget class="QLineEdit" name="lineEdit_6b"/>
+               </item>
+               <item>
+                <widget class="QPushButton" name="cleanButton_6b">
+                 <property name="text">
+                  <string>Clean</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="Run">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="accessibleName">
+        <string>other</string>
+       </property>
+       <attribute name="title">
+        <string>Run sums</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_7">
+          <item>
+           <widget class="QProgressBar" name="progressScript">
+            <property name="value">
+             <number>0</number>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="runButton">
+            <property name="styleSheet">
+             <string notr="true">background-color: yellow;</string>
+            </property>
+            <property name="text">
+             <string>RUN</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>Command output:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTextEdit" name="outputScriptTextEdit">
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="Outputs">
+       <attribute name="title">
+        <string>Outputs</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_21">
+        <item>
+         <widget class="QTabWidget" name="tabWidgetOuputVariants">
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="tab_23">
+           <attribute name="title">
+            <string>#1</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_24">
+            <item>
+             <widget class="QTabWidget" name="tabWidget">
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <widget class="QWidget" name="tab">
+               <attribute name="title">
+                <string>Country 1</string>
+               </attribute>
+               <layout class="QVBoxLayout" name="verticalLayout_4">
+                <item>
+                 <widget class="CountryTreeWidget" name="treeWidget11">
+                  <column>
+                   <property name="text">
+                    <string>Sequence</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>Path</string>
+                   </property>
+                  </column>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="tab_2">
+               <attribute name="title">
+                <string>Country 2</string>
+               </attribute>
+               <layout class="QVBoxLayout" name="verticalLayout_5">
+                <item>
+                 <widget class="CountryTreeWidget" name="treeWidget12">
+                  <column>
+                   <property name="text">
+                    <string>Sequence</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>Path</string>
+                   </property>
+                  </column>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_24">
+           <attribute name="title">
+            <string>#2</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_25">
+            <item>
+             <widget class="QTabWidget" name="tabWidget_2">
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <widget class="QWidget" name="tab_3">
+               <attribute name="title">
+                <string>Country 1</string>
+               </attribute>
+               <layout class="QVBoxLayout" name="verticalLayout_22">
+                <item>
+                 <widget class="CountryTreeWidget" name="treeWidget21">
+                  <column>
+                   <property name="text">
+                    <string>Sequence</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>Path</string>
+                   </property>
+                  </column>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="tab_4">
+               <attribute name="title">
+                <string>Country 2</string>
+               </attribute>
+               <layout class="QVBoxLayout" name="verticalLayout_23">
+                <item>
+                 <widget class="CountryTreeWidget" name="treeWidget22">
+                  <column>
+                   <property name="text">
+                    <string>Sequence</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>Path</string>
+                   </property>
+                  </column>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_25">
+           <attribute name="title">
+            <string>#3</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_26">
+            <item>
+             <widget class="QTabWidget" name="tabWidget_3">
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <widget class="QWidget" name="tab_5">
+               <attribute name="title">
+                <string>Country 1</string>
+               </attribute>
+               <layout class="QVBoxLayout" name="verticalLayout_12">
+                <item>
+                 <widget class="CountryTreeWidget" name="treeWidget31">
+                  <column>
+                   <property name="text">
+                    <string>Sequence</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>Path</string>
+                   </property>
+                  </column>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="tab_6">
+               <attribute name="title">
+                <string>Country 2</string>
+               </attribute>
+               <layout class="QVBoxLayout" name="verticalLayout_13">
+                <item>
+                 <widget class="CountryTreeWidget" name="treeWidget32">
+                  <column>
+                   <property name="text">
+                    <string>Sequence</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>Path</string>
+                   </property>
+                  </column>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_26">
+           <attribute name="title">
+            <string>#4</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_27">
+            <item>
+             <widget class="QTabWidget" name="tabWidget_4">
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <widget class="QWidget" name="tab_7">
+               <attribute name="title">
+                <string>Country 1</string>
+               </attribute>
+               <layout class="QVBoxLayout" name="verticalLayout_14">
+                <item>
+                 <widget class="CountryTreeWidget" name="treeWidget41">
+                  <column>
+                   <property name="text">
+                    <string>Sequence</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>Path</string>
+                   </property>
+                  </column>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="tab_8">
+               <attribute name="title">
+                <string>Country 2</string>
+               </attribute>
+               <layout class="QVBoxLayout" name="verticalLayout_15">
+                <item>
+                 <widget class="CountryTreeWidget" name="treeWidget42">
+                  <column>
+                   <property name="text">
+                    <string>Sequence</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>Path</string>
+                   </property>
+                  </column>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_27">
+           <attribute name="title">
+            <string>#5</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_28">
+            <item>
+             <widget class="QTabWidget" name="tabWidget_5">
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <widget class="QWidget" name="tab_9">
+               <attribute name="title">
+                <string>Country 1</string>
+               </attribute>
+               <layout class="QVBoxLayout" name="verticalLayout_16">
+                <item>
+                 <widget class="CountryTreeWidget" name="treeWidget51">
+                  <column>
+                   <property name="text">
+                    <string>Sequence</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>Path</string>
+                   </property>
+                  </column>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="tab_10">
+               <attribute name="title">
+                <string>Country 2</string>
+               </attribute>
+               <layout class="QVBoxLayout" name="verticalLayout_17">
+                <item>
+                 <widget class="CountryTreeWidget" name="treeWidget52">
+                  <column>
+                   <property name="text">
+                    <string>Sequence</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>Path</string>
+                   </property>
+                  </column>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_28">
+           <attribute name="title">
+            <string>#6</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_29">
+            <item>
+             <widget class="QTabWidget" name="tabWidget_6">
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <widget class="QWidget" name="tab_11">
+               <attribute name="title">
+                <string>Country 1</string>
+               </attribute>
+               <layout class="QVBoxLayout" name="verticalLayout_18">
+                <item>
+                 <widget class="CountryTreeWidget" name="treeWidget61">
+                  <column>
+                   <property name="text">
+                    <string>Sequence</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>Path</string>
+                   </property>
+                  </column>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="tab_12">
+               <attribute name="title">
+                <string>Country 2</string>
+               </attribute>
+               <layout class="QVBoxLayout" name="verticalLayout_19">
+                <item>
+                 <widget class="CountryTreeWidget" name="treeWidget62">
+                  <column>
+                   <property name="text">
+                    <string>Sequence</string>
+                   </property>
+                  </column>
+                  <column>
+                   <property name="text">
+                    <string>Path</string>
+                   </property>
+                  </column>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="Run_multiple">
+       <attribute name="title">
+        <string>Run multiple</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_24">
+          <item>
+           <widget class="QProgressBar" name="progressMultipleScript">
+            <property name="maximum">
+             <number>1</number>
+            </property>
+            <property name="value">
+             <number>0</number>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="runMultipleButton">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: yellow;
+</string>
+            </property>
+            <property name="text">
+             <string>RUN</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>Command output:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTextEdit" name="outputScriptMultipleTextEdit"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="All_plots">
+       <attribute name="title">
+        <string>All plots</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_20">
+        <item>
+         <widget class="QLabel" name="label_8">
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Plots contain sums of up to 4 Fasta files by Country&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTabWidget" name="tabWidgetMultipleVariants">
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="tab_15">
+           <attribute name="title">
+            <string>#1</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_6">
+            <item>
+             <widget class="PlotTreeWidget" name="treeWidgetPlot1">
+              <column>
+               <property name="text">
+                <string>Country/Plot</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Path</string>
+               </property>
+              </column>
+              <item>
+               <property name="text">
+                <string>Country 1</string>
+               </property>
+               <item>
+                <property name="text">
+                 <string>Plot sums: A vs bp</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Plot sums: T vs bp</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Plot sums: C vs bp</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Plot sums: G vs bp</string>
+                </property>
+               </item>
+              </item>
+              <item>
+               <property name="text">
+                <string>Country 2</string>
+               </property>
+               <item>
+                <property name="text">
+                 <string>Plot sums: A vs bp</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Plot sums: T vs bp</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Plot sums: C vs bp</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Plot sums: G vs bp</string>
+                </property>
+               </item>
+              </item>
+              <item>
+               <property name="text">
+                <string>Country 1&amp;2</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <item>
+                <property name="text">
+                 <string>Plot all sums: A vs bp</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Plot all sums: T vs bp</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Plot all sums: C vs bp</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Plot all sums: G vs bp</string>
+                </property>
+               </item>
+              </item>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_16">
+           <attribute name="title">
+            <string>#2</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_7">
+            <item>
+             <widget class="PlotTreeWidget" name="treeWidgetPlot2">
+              <column>
+               <property name="text">
+                <string>Country/Plot</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Path</string>
+               </property>
+              </column>
+              <item>
+               <property name="text">
+                <string>Country 1</string>
+               </property>
+               <item>
+                <property name="text">
+                 <string>Plot sums: A vs bp</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Plot sums: T vs bp</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Plot sums: C vs bp</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Plot sums: G vs bp</string>
+                </property>
+               </item>
+              </item>
+              <item>
+               <property name="text">
+                <string>Country 2</string>
+               </property>
+               <item>
+                <property name="text">
+                 <string>Plot sums: A vs bp</string>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Plot sums: T vs bp</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Plot sums: C vs bp</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Plot sums: G vs bp</string>
+                </property>
+               </item>
+              </item>
+              <item>
+               <property name="text">
+                <string>Country 1&amp;2</string>
+               </property>
+               <item>
+                <property name="text">
+                 <string>Plot all sums: A vs bp</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Plot all sums: T vs bp</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Plot all sums: C vs bp</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Plot all sums: G vs bp</string>
+                </property>
+               </item>
+              </item>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_17">
+           <attribute name="title">
+            <string>#3</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_8">
+            <item>
+             <widget class="PlotTreeWidget" name="treeWidgetPlot3">
+              <column>
+               <property name="text">
+                <string>Country/Plot</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Path</string>
+               </property>
+              </column>
+              <item>
+               <property name="text">
+                <string>Country 1</string>
+               </property>
+               <item>
+                <property name="text">
+                 <string>Plot sums: A vs bp</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Plot sums: T vs bp</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Plot sums: C vs bp</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Plot sums: G vs bp</string>
+                </property>
+               </item>
+              </item>
+              <item>
+               <property name="text">
+                <string>Country 2</string>
+               </property>
+               <item>
+                <property name="text">
+                 <string>Plot sums: A vs bp</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Plot sums: T vs bp</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Plot sums: C vs bp</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Plot sums: G vs bp</string>
+                </property>
+               </item>
+              </item>
+              <item>
+               <property name="text">
+                <string>Country 1&amp;2</string>
+               </property>
+               <item>
+                <property name="text">
+                 <string>Plot all sums: A vs bp</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Plot all sums: T vs bp</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Plot all sums: C vs bp</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Plot all sums: G vs bp</string>
+                </property>
+               </item>
+              </item>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_18">
+           <attribute name="title">
+            <string>#4</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_9">
+            <item>
+             <widget class="PlotTreeWidget" name="treeWidgetPlot4">
+              <column>
+               <property name="text">
+                <string>Country/Plot</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Path</string>
+               </property>
+              </column>
+              <item>
+               <property name="text">
+                <string>Country 1</string>
+               </property>
+               <item>
+                <property name="text">
+                 <string>Plot sums: A vs bp</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Plot sums: T vs bp</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Plot sums: C vs bp</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Plot sums: G vs bp</string>
+                </property>
+               </item>
+              </item>
+              <item>
+               <property name="text">
+                <string>Country 2</string>
+               </property>
+               <item>
+                <property name="text">
+                 <string>Plot sums: A vs bp</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Plot sums: T vs bp</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Plot sums: C vs bp</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Plot sums: G vs bp</string>
+                </property>
+               </item>
+              </item>
+              <item>
+               <property name="text">
+                <string>Country 1&amp;2</string>
+               </property>
+               <item>
+                <property name="text">
+                 <string>Plot all sums: A vs bp</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Plot all sums: T vs bp</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Plot all sums: C vs bp</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Plot all sums: G vs bp</string>
+                </property>
+               </item>
+              </item>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_19">
+           <attribute name="title">
+            <string>#5</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_10">
+            <item>
+             <widget class="PlotTreeWidget" name="treeWidgetPlot5">
+              <column>
+               <property name="text">
+                <string>Country/Plot</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Path</string>
+               </property>
+              </column>
+              <item>
+               <property name="text">
+                <string>Country 1</string>
+               </property>
+               <item>
+                <property name="text">
+                 <string>Plot sums: A vs bp</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Plot sums: T vs bp</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Plot sums: C vs bp</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Plot sums: G vs bp</string>
+                </property>
+               </item>
+              </item>
+              <item>
+               <property name="text">
+                <string>Country 2</string>
+               </property>
+               <item>
+                <property name="text">
+                 <string>Plot sums: A vs bp</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Plot sums: T vs bp</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Plot sums: C vs bp</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Plot sums: G vs bp</string>
+                </property>
+               </item>
+              </item>
+              <item>
+               <property name="text">
+                <string>Country 1&amp;2</string>
+               </property>
+               <item>
+                <property name="text">
+                 <string>Plot all sums: A vs bp</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Plot all sums: T vs bp</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Plot all sums: C vs bp</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Plot all sums: G vs bp</string>
+                </property>
+               </item>
+              </item>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab_20">
+           <attribute name="title">
+            <string>#6</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_11">
+            <item>
+             <widget class="PlotTreeWidget" name="treeWidgetPlot6">
+              <column>
+               <property name="text">
+                <string>Country/Plot</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Path</string>
+               </property>
+              </column>
+              <item>
+               <property name="text">
+                <string>Country 1</string>
+               </property>
+               <item>
+                <property name="text">
+                 <string>Plot sums: A vs bp</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Plot sums: T vs bp</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Plot sums: C vs bp</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Plot sums: G vs bp</string>
+                </property>
+               </item>
+              </item>
+              <item>
+               <property name="text">
+                <string>Country 2</string>
+               </property>
+               <item>
+                <property name="text">
+                 <string>Plot sums: A vs bp</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Plot sums: T vs bp</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Plot sums: C vs bp</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Plot sums: G vs bp</string>
+                </property>
+               </item>
+              </item>
+              <item>
+               <property name="text">
+                <string>Country 1&amp;2</string>
+               </property>
+               <item>
+                <property name="text">
+                 <string>Plot all sums: A vs bp</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Plot all sums: T vs bp</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Plot all sums: C vs bp</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Plot all sums: G vs bp</string>
+                </property>
+               </item>
+              </item>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="Compare_plots">
+       <attribute name="title">
+        <string>Compare plots</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_30">
+        <item>
+         <widget class="QLabel" name="label_7">
+          <property name="minimumSize">
+           <size>
+            <width>281</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:9pt;&quot;&gt;Comparison of Plots with results in the paper:&lt;br/&gt;   &amp;quot;Uncovering Signals from the Coronavirus Genome&amp;quot;&lt;br/&gt;   Genes 2021; 12(7): 973 &lt;/span&gt;&lt;a href=&quot;https://doi.org/10.3390/genes12070973&quot;&gt;&lt;span style=&quot; font-size:9pt; text-decoration: underline; color:#0000ff;&quot;&gt;doi.org/10.3390/genes12070973&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="openExternalLinks">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="ComparisonTreeWidget" name="treeWidgetComparison">
+          <property name="columnCount">
+           <number>2</number>
+          </property>
+          <column>
+           <property name="text">
+            <string>Info</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Path</string>
+           </property>
+          </column>
+          <item>
+           <property name="text">
+            <string>(A) Variant imprints displayed by the nucleotide base: Adenine</string>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <item>
+            <property name="text">
+             <string>Paper:</string>
+            </property>
+            <property name="text">
+             <string>Fig3bnew.png</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string> GenomeBits GUI results:</string>
+            </property>
+            <property name="text">
+             <string>Fig-A.png</string>
+            </property>
+           </item>
+          </item>
+          <item>
+           <property name="text">
+            <string>(T) Variant imprints displayed by the nucleotide base: Thymine</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>Paper:</string>
+            </property>
+            <property name="text">
+             <string>Fig4bnew.png</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string> GenomeBits GUI results:</string>
+            </property>
+            <property name="text">
+             <string>Fig-T.png</string>
+            </property>
+           </item>
+          </item>
+          <item>
+           <property name="text">
+            <string>(C) Variant imprints displayed by the nucleotide base: Cytosine</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>Paper:</string>
+            </property>
+            <property name="text">
+             <string>Fig5bnew.png</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string> GenomeBits GUI results:</string>
+            </property>
+            <property name="text">
+             <string>Fig-C.png</string>
+            </property>
+           </item>
+          </item>
+          <item>
+           <property name="text">
+            <string>(G) Variant imprints displayed by the nucleotide base: Guanine</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>Paper:</string>
+            </property>
+            <property name="text">
+             <string>Fig6bnew.png</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string> GenomeBits GUI results:</string>
+            </property>
+            <property name="text">
+             <string>Fig-G.png</string>
+            </property>
+           </item>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>885</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Info</string>
+    </property>
+    <addaction name="actionAbout"/>
+    <addaction name="actionLicense"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp_2">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionManual"/>
+   </widget>
+   <addaction name="menuHelp"/>
+   <addaction name="menuHelp_2"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionLicense">
+   <property name="text">
+    <string>License</string>
+   </property>
+  </action>
+  <action name="actionManual">
+   <property name="text">
+    <string>Manual</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>CountryTreeWidget</class>
+   <extends>QTreeWidget</extends>
+   <header>countrytreewidget.h</header>
+  </customwidget>
+  <customwidget>
+   <class>PlotTreeWidget</class>
+   <extends>QTreeWidget</extends>
+   <header>plottreewidget.h</header>
+  </customwidget>
+  <customwidget>
+   <class>ComparisonTreeWidget</class>
+   <extends>QTreeWidget</extends>
+   <header>comparisontreewidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>groupBox_1</tabstop>
+  <tabstop>comboBox_1a</tabstop>
+  <tabstop>pushButton_1a</tabstop>
+  <tabstop>comboBox_1b</tabstop>
+  <tabstop>pushButton_1b</tabstop>
+  <tabstop>groupBox_2</tabstop>
+  <tabstop>comboBox_2a</tabstop>
+  <tabstop>pushButton_2a</tabstop>
+  <tabstop>comboBox_2b</tabstop>
+  <tabstop>pushButton_2b</tabstop>
+  <tabstop>groupBox_3</tabstop>
+  <tabstop>comboBox_3a</tabstop>
+  <tabstop>pushButton_3a</tabstop>
+  <tabstop>comboBox_3b</tabstop>
+  <tabstop>pushButton_3b</tabstop>
+  <tabstop>groupBox_4</tabstop>
+  <tabstop>comboBox_4a</tabstop>
+  <tabstop>pushButton_4a</tabstop>
+  <tabstop>comboBox_4b</tabstop>
+  <tabstop>pushButton_4b</tabstop>
+  <tabstop>groupBox_5</tabstop>
+  <tabstop>comboBox_5a</tabstop>
+  <tabstop>pushButton_5a</tabstop>
+  <tabstop>comboBox_5b</tabstop>
+  <tabstop>pushButton_5b</tabstop>
+  <tabstop>groupBox_6</tabstop>
+  <tabstop>comboBox_6a</tabstop>
+  <tabstop>pushButton_6a</tabstop>
+  <tabstop>comboBox_6b</tabstop>
+  <tabstop>pushButton_6b</tabstop>
+ </tabstops>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>actionLicense</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>slotActionLicense()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>443</x>
+     <y>377</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionAbout</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>slotActionAbout()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>443</x>
+     <y>377</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionManual</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>slotActionManual()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>442</x>
+     <y>378</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>slotActionLicense()</slot>
+  <slot>slotActionAbout()</slot>
+  <slot>slotActionManual()</slot>
+ </slots>
+</ui>

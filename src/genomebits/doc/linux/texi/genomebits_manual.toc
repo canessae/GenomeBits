@@ -1,0 +1,24 @@
+@numchapentry{About @code {genomebits}}{1}{About}{1}
+@numsecentry{@code {genomebits} GUI Features}{1.1}{genomebits Features}{1}
+@numchapentry{Requirements @code {genomebits}}{2}{Requirements}{4}
+@numsecentry{Hardware & Software}{2.1}{Hardware and Software}{4}
+@numsubsecentry{Copyright}{2.1.1}{Copyright}{4}
+@numchapentry{Install}{3}{Install}{5}
+@numsecentry{Manual Install}{3.1}{Manual Install}{5}
+@numsecentry{The simple way}{3.2}{}{5}
+@numsecentry{The hard way}{3.3}{}{5}
+@numsecentry{Uninstall}{3.4}{Uninstall}{6}
+@numsecentry{Updates}{3.5}{Updates}{6}
+@numchapentry{How To use?}{4}{How To}{7}
+@numsecentry{Run Alternating Sums}{4.1}{Run Sums}{7}
+@numsubsecentry{FASTA Outputs}{4.1.1}{Fasta Oututs}{8}
+@numsubsecentry{Get/Save Single FASTA Files}{4.1.2}{Single FASTA}{8}
+@numsubsecentry{Associated Binaries for @math {A,C,T,G}}{4.1.3}{Associated Binaries}{9}
+@numsubsecentry{Alternating Sums for @math {A,C,T,G}}{4.1.4}{Alternating Sums Results}{10}
+@numsubsecentry{Alternating Sums Plots for @math {A,T} and @math {C,G}}{4.1.5}{Alternating Sums Plots}{11}
+@numsubsecentry{Alternating Sums Plots for @math {A,C,T,G}}{4.1.6}{Alternating Sums Comparison Plots}{12}
+@numsecentry{Run Multiple}{4.2}{Run Multiple}{13}
+@numsubsecentry{Alternating Sums Plots for @math {A,C,T,G} for each Country}{4.2.1}{Alternating Sums Plots Each Country}{13}
+@numsubsecentry{Alternating Sums Plots for @math {A,C,T,G} Both Countries}{4.2.2}{Alternating Sums Plots Both Countries}{15}
+@numsubsecentry{Plot All @code {genomebits} GUI Results}{4.2.3}{Plot All}{15}
+@numsubsecentry{Compare @code {genomebits} GUI and Article Results}{4.2.4}{Compare with Paper}{16}

@@ -1,0 +1,28 @@
+
+
+RUN Texi file
+-------------
+
+cd texi
+tex openEyA_manual.texi
+
+
+CREATE HTML
+-----------
+
+texi2html -menu -split chapter -subdir html -toc_file index.html texi/openEyA_manual.texi
+
+
+CREATE PDF
+----------
+
+cd texi
+dvipdf  openEyA_manual
+
+
+CREATE QTHELP
+-------------
+
+qhelpgenerator manual.qhp -o manual.qch
+qcollectiongenerator openeya.qhcp -o openeya.qhc
+

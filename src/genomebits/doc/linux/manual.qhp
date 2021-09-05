@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QtHelpProject version="1.0">
+		<namespace>genomebits.org.genomebits.1.0</namespace>
+		<virtualFolder>doc</virtualFolder>
+		<customFilter name="GenomeBits 1.0">
+				<filterAttribute>genomebits</filterAttribute>
+				<filterAttribute>1.0</filterAttribute>
+		</customFilter>
+		<filterSection>
+				<filterAttribute>genomebits</filterAttribute>
+				<filterAttribute>1.0</filterAttribute>
+				<toc>
+						<section title="GenomeBits Manual" ref="index.html">
+							<section title="About GenomeBits" ref="genomebits_manual_0.html"/>
+							<section title="Requirements" ref="genomebits_manual_1.html"/>
+							<section title="Install" ref="genomebits_manual_2.html"/>
+							<section title="How to use" ref="genomebits_manual_3.html"/>
+						</section>
+				</toc>
+				<files>
+						<file>index.html</file>
+						<file>genomebits_manual_0.html</file>
+						<file>genomebits_manual_1.html</file>
+						<file>genomebits_manual_2.html</file>
+						<file>genomebits_manual_3.html</file>
+						<file>gb-0a.jpg</file>
+						<file>gb-0b.png</file>
+						<file>gb-10.png</file>
+						<file>gb-11.png</file>
+						<file>gb-12.png</file>
+						<file>gb-1.png</file>
+						<file>gb-2.png</file>
+						<file>gb-3.png</file>
+						<file>gb-4.png</file>
+						<file>gb-5.png</file>
+						<file>gb-6.png</file>
+						<file>gb-7.png</file>
+						<file>gb-8.png</file>
+						<file>gb-9a.png</file>
+						<file>gb-9.png</file>
+			</files>
+		</filterSection>
+</QtHelpProject>

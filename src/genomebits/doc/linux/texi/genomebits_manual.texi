@@ -1,0 +1,102 @@
+\input texinfo.tex @c -*-texinfo-*-
+@c %**start of header
+@settitle @code{genomebits} User's Guide - @value{edition}
+@setfilename i
+@syncodeindex vr fn
+@c %**end of header
+@set edition @b{1.0.x}
+@set update-month September 2021
+@set ubuntu @b{Ubuntu 21.04}
+ 
+@titlepage
+@c @page
+@subtitle @code{GitHub - genomebits}
+@subtitle @emph{User's Guide} @b{version} @value{edition}; @value{update-month}
+
+@title
+@sp 1
+
+@c @sp 2
+@c ----------------------------- Figure
+@iftex
+@tex
+\input epsf
+\centerline{\epsfbox{gb-0a.ps}}
+\centerline{\epsfbox{gb-0b.ps}}
+@end tex
+@end iftex
+@ifhtml
+@c <img src="gb-0a.jpg" align="center">
+@c <img src="gb-0b.png" align="center">
+@image{gb-0a}
+@image{gb-0b}
+@end ifhtml
+@c -----------------------------End  Figure
+@c @sp 2
+
+@sp 1
+@center @titlefont{@emph{Tool for Uncovering Characteristics}}
+@center @titlefont{@emph{Signals from Genome Sequences}}
+
+@c @sp 1
+@c @quotation
+@c @quotation
+@quotation
+@c @center @titlefont{@i{for releases 1.0.x}}
+@c @* 
+
+@sp 1
+@emph{
+@code{genomebits} is a Graphics User Interface (GUI) to the signal analysis of 
+complete genome sequences according to its progression along the nucleotide bases 
+position. This method for uncovering distinctive patterns in the intrinsic data 
+organization of genome sequences is based on a finite alternating sum series having 
+independently distributed terms associated with binary (0,1) indicators for the 
+nucleotide bases A,C,T,G. The GUI runs under Linux Ubuntu O.S., and it can be useful 
+to study the dynamics of Human CoV-2 genome variants using available GISAID FASTA data. 
+}
+
+@sp 1
+@copyright{} @code{genomebits} @emph{by E. Canessa, L. Tenze} @* Genes 2021; 12(7):973 - doi.org/10.3390/genes12070973
+@end quotation
+@c @end quotation
+@c @end quotation
+
+@sp 1
+@end titlepage
+
+ 
+@c @setchapternewpage odd
+
+@iftex
+@c @headings double
+@end iftex
+ 
+@ifinfo
+@node top
+@top
+@menu
+* About::
+* Requirements::
+* Install::
+* HowTo::
+@end menu
+@end ifinfo
+
+
+@contents
+
+@include about.texi 
+@include requirements.texi
+@include install.texi
+@include howtouse.texi
+
+@c =================================
+ 
+@c @node Index
+@c @unnumbered Index
+@c @printindex cp
+@c @summarycontents
+ 
+@bye
+

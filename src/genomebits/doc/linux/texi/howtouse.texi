@@ -1,0 +1,410 @@
+
+
+@node How To
+@chapter How To use?
+
+@example
+   @r{ @emph{... It is very, very simple!} }
+@end example
+
+@menu
+* Run Sums::
+* Run Multiple::
+@end menu
+
+
+
+@node Run Sums
+@section Run Alternating Sums 
+
+
+@menu
+* Fasta Outputs::
+* Single FASTA::
+* Associated Binaries::
+* Alternating Sums Results::
+* Alternating Sums Plots::
+* Alternating Sums Comparison Plots::
+@end menu
+
+
+
+To start using the @code{genomebits} GUI 
+for a quantitative examination of distinctive patterns of complete genome data, 
+you need to input first (up to six-@emph{times}-two) the paths to the FASTA
+files for the variants/species containing (@emph{i.e.}, concatenating) more 
+than one genome sequence each. As shown in figure 2, it also necessary to 
+select in the '@code{Setup Tab}' (up to two) Countries from which the sequences 
+were submitted by the laboratories.
+
+Several thousands of complete FASTA sequences are available from the GISAID Initiative,
+such as those for the ongoing Human CoV-2 genome variants from all Continents.
+See: www.gisaid.org
+
+By default, as example, the GUI links to a set of FASTA genome sequences 
+obtained from Italy.
+
+
+@sp 2
+@c ----------------------------- Figure 2
+@c \epsfxsize=60pt
+@iftex
+@tex
+\input epsf
+\centerline{\epsfbox{gb-2.ps}}
+@end tex
+@end iftex
+@ifhtml
+@c <img src="gb-2.png" align="center">
+@image{gb-2}
+@end ifhtml
+@c -----------------------------End Figure
+@center @b{Fig.2}: @emph{Default} @code{genomebits} @emph{GUI}.
+@sp 2
+
+
+
+
+@node Fasta Oututs
+@subsection FASTA Outputs
+
+To calculate the alternating sums in Eqn.(1) for up to six-@emph{times}-two inputs of FASTA
+files containing (@emph{i.e.}, concatenating) more than one genome sequence each (submitted
+via the @code{genomebits} inputs in figure 2), press the
+RUN button in the '@code{Run sums}' Tab as in figure 3 to get the clickable Menu Tree tab:
+
+
+@sp 2
+@c ----------------------------- Figure 3
+@c \epsfxsize=60pt
+@iftex
+@tex
+\input epsf
+\centerline{\epsfbox{gb-3.ps}}
+@end tex
+@end iftex
+@ifhtml
+@c <img src="gb-3.png" align="center">
+@image{gb-3}
+@end ifhtml
+@c -----------------------------End Figure
+@center @b{Fig.3}: @emph{Computation of the alternating sums in Eqn.(1).} 
+@sp 2
+
+
+
+@node Single FASTA 
+@subsection Get/Save Single FASTA Files 
+
+
+After running the alternating sums in Eqn.(1),
+one can separate and get/save the single FASTA files (for each Country), which may be contained in the
+single FASTA input file including more than one genome sequence. As shown below, just select a FASTA 
+file with the mouse within the '@code{Outputs Tab}'. 
+
+
+@sp 2
+@c ----------------------------- Figure 4
+@c \epsfxsize=60pt
+@iftex
+@tex
+\input epsf
+\centerline{\epsfbox{gb-4.ps}}
+@end tex
+@end iftex
+@ifhtml
+@c <img src="gb-4.png" align="center">
+@image{gb-4}
+@end ifhtml
+@c -----------------------------End Figure
+@center @b{Fig.4}: @emph{Visualize and save single FASTA files for each Country.}
+@sp 2
+
+
+
+
+@node Associated Binaries 
+@subsection Associated Binaries for @math{A,C,T,G} 
+
+
+From the '@code{Outputs Tab}' you can also 
+get single files for each of the four nucleotide bases @math{A,C,T,G} associated with 
+binary 0 or 1 values according to its presence along the complete single genome sequences.
+
+
+@sp 2
+@c ----------------------------- Figure 5
+@c \epsfxsize=60pt
+@iftex
+@tex
+\input epsf
+\centerline{\epsfbox{gb-5.ps}}
+@end tex
+@end iftex
+@ifhtml
+@c <img src="gb-5.png" align="center">
+@image{gb-5}
+@end ifhtml
+@c -----------------------------End Figure
+@center @b{Fig.5}: @emph{Visualize and save associated binaries for each}
+@center @emph{nucleotide bases @math{A,C,T,G} from a single genome sequence.}
+@sp 2
+
+
+
+
+
+@node Alternating Sums Results 
+@subsection Alternating Sums for @math{A,C,T,G} 
+
+
+You can also get the alternating sums results in single files for the four nucleotide
+bases @math{A,C,T,G} associated with binary 0 or 1 
+values according to its presence along the genome sequences.
+
+@sp 2
+@c ----------------------------- Figure 6
+@c \epsfxsize=60pt
+@iftex
+@tex
+\input epsf
+\centerline{\epsfbox{gb-6.ps}}
+@end tex
+@end iftex
+@ifhtml
+@c <img src="gb-6.png" align="center">
+@image{gb-6}
+@end ifhtml
+@c -----------------------------End Figure
+@center @b{Fig.6}: @emph{Visualize and save the alternating sums results for each}
+@center @emph{nucleotide bases @math{A,C,T,G} from a single genome sequence.}
+@sp 2
+
+
+
+@node Alternating Sums Plots 
+@subsection Alternating Sums Plots for @math{A,T} and @math{C,G} 
+
+
+From within the '@code{Outputs Tab}' you can see 
+Plots of the alternating sums of the binary data files to compare behaviour of the pairs
+@math{A,T} and @math{C,G} nucleotide bases versus bases position (bp) from a single genome sequence.
+
+
+@sp 2
+@c ----------------------------- Figure 7
+@c \epsfxsize=60pt
+@iftex
+@tex
+\input epsf
+\centerline{\epsfbox{gb-7.ps}}
+@end tex
+@end iftex
+@ifhtml
+@c <img src="gb-7.png" align="center">
+@image{gb-7}
+@end ifhtml
+@c -----------------------------End Figure
+@center @b{Fig.7}: @emph{Plots of alternating sums of binary data files for}
+@center @emph{the pairs @math{A,T} and @math{C,G}.}
+@sp 2
+
+
+
+@node Alternating Sums Comparison Plots
+@subsection Alternating Sums Plots for @math{A,C,T,G} 
+
+
+As in figure 8, you can get a
+comparison in one plot the alternating sums results versus bases position (bp)
+for all four nucleotide bases @math{A,C,T,G} associated with binary 0 or 1
+values according to its presence along the genome sequences for each Country.
+
+
+@sp 2
+@c ----------------------------- Figure 8
+@c \epsfxsize=60pt
+@iftex
+@tex
+\input epsf
+\centerline{\epsfbox{gb-8.ps}}
+@end tex
+@end iftex
+@ifhtml
+@c <img src="gb-8.png" align="center">
+@image{gb-8}
+@end ifhtml
+@c -----------------------------End Figure
+@center @b{Fig.8}: @emph{Plots of alternating sums of binary data files for all @math{A,C,T,G}.}
+@sp 2
+
+
+
+
+@node Run Multiple
+@section Run Multiple
+
+
+@menu
+* Alternating Sums Plots Each Country::
+* Alternating Sums Plots Both Countries::
+* Plot All::
+* Compare with Paper::
+@end menu
+
+
+The @code{genomebits} GUI also allows you to generated several other signal plots
+obtained from Eqn.(1) for each of the four nucleotide bases @math{A,C,T,G}
+to compare results from (up to six) given variants/species and (up to two) 
+selected Countries in each case.
+
+Finally, it is also possible to compare visualmente the @code{genomebits} GUI results 
+with the results in the original paper @emph{"Uncovering Signals from the Coronavirus Genome"}.
+
+
+
+@node Alternating Sums Plots Each Country
+@subsection Alternating Sums Plots for @math{A,C,T,G} for each Country 
+
+
+As shown below, you can
+plot the alternating sums results versus bases position (bp)
+for the four nucleotide bases @math{A,C,T,G} associated with binary 0 or 1
+values according to its presence along the genome sequences @emph{for each} 
+single Country and up to 4 FASTA files for each variant/specie.
+
+@sp 2
+@c ----------------------------- Figure 9
+@c \epsfxsize=60pt
+@iftex
+@tex
+\input epsf
+\centerline{\epsfbox{gb-9.ps}}
+\centerline{\epsfbox{gb-9a.ps}}
+@end tex
+@end iftex
+@ifhtml
+@c <img src="gb-9.png" align="center">
+@c <img src="gb-9a.png" align="center">
+@image{gb-9}
+@end ifhtml
+@c -----------------------------End Figure
+@center @b{Figs.9}: @emph{Plots for a Country and up to 4 FASTA files the}
+@center @emph{alternating sums of binary data files for @math{A,C,T,G}.}
+@sp 2
+
+
+
+
+@node Alternating Sums Plots Both Countries
+@subsection Alternating Sums Plots for @math{A,C,T,G} Both Countries
+
+
+Alternatively, as illustrated in figure 10, you can also
+plot the alternating sums results versus bases position (bp)
+for the four nucleotide bases @math{A,C,T,G} associated with binary 0 or 1
+values according to its presence along the genome sequences @emph{for both} Countries
+(if given so as input) and up to 4 FASTA files for each variant/specie.
+
+
+
+@sp 2
+@c ----------------------------- Figure 10
+@c \epsfxsize=60pt
+@iftex
+@tex
+\input epsf
+\centerline{\epsfbox{gb-10.ps}}
+@end tex
+@end iftex
+@ifhtml
+@c <img src="gb-10.png" align="center">
+@image{gb-10}
+@end ifhtml
+@c -----------------------------End Figure
+@center @b{Fig.10}: @emph{Plots for both Countries and up to 4 FASTA files the}
+@center @emph{alternating sums of binary data files for @math{A,C,T,G}.}
+@sp 2
+
+
+
+
+@node Plot All 
+@subsection Plot All @code{genomebits} GUI Results 
+
+
+As in the figure, one can plot in one image all the @code{genomebits} GUI results versus bases position (bp)
+for each nucleotide base @math{A,C,T} or @math{G} associated with binary 0 or 1
+values according to its presence along the genome sequences for 
+up to six variants/species and up to 4 FASTA files by Country.
+
+@sp 2
+@c ----------------------------- Figure 11
+@c \epsfxsize=60pt
+@iftex
+@tex
+\input epsf
+\centerline{\epsfbox{gb-11.ps}}
+@end tex
+@end iftex
+@ifhtml
+@c <img src="gb-11.png" align="center">
+@image{gb-11}
+@end ifhtml
+@c -----------------------------End Figure
+@center @b{Fig.11}: @emph{Plot of all the @code{genomebits} GUI results.}
+@sp 2
+
+
+
+@node Compare with Paper 
+@subsection Compare @code{genomebits} GUI and Article Results
+
+
+It is also possible to
+compare visualmente the @code{genomebits} GUI results versus bases position (bp)
+for (up to six) given variants/species and (up to two) selected Countries,
+with the results in the paper @emph{"Uncovering Signals from the Coronavirus Genome"} -see:
+Genes 2021; 12(7):973. https://doi.org/10.3390/genes12070973 
+Complete coronavirus sequences with N nucleotides are of the order of 30,000 bp in length. 
+
+
+@sp 2
+@c ----------------------------- Figure 12
+@c \epsfxsize=60pt
+@iftex
+@tex
+\input epsf
+\centerline{\epsfbox{gb-12.ps}}
+@end tex
+@end iftex
+@ifhtml
+@c <img src="gb-12.png" align="center">
+@image{gb-12}
+@end ifhtml
+@c -----------------------------End Figure
+@center @b{Fig.12}: @emph{Compare @code{genomebits} GUI results with Main Article Results for coronavirus genome.}
+@sp 2
+
+
+In summary,
+the @code{genomebots} GUI is based on the published quantitative method for the examination 
+of distinctive patterns of complete genome data. One deals with a certain type of alternating finite
+series having terms converted to binary values (0,1) for the nucleotide bases (A)denine,
+(C)ytosine, (G)uanine and (T)hymine 
+according to their progression along the genome sequences. This mapping into four
+binary projections of the sequences follows previous studies on the three-base
+periodicity characteristic of protein-coding DNA sequences. 
+For example, by this method we uncover distinctive signals of the intrinsic gene organization
+revealed by the genome sequences of the single-stranded RNA coronaviruses.
+
+The present @code{genomebots} tool is effective and easier to apply
+in protein sequence comparison. It is motivated by the need to identify genetic mechanisms
+involved in coronavirus spreading. The added value of the alternating sums of the type in
+Eqn.(1) is to have a distinctive function representation of naturally occurring genome
+sequences of variants.  Plus and minus signs are chosen sequentially starting with +1
+by default. From the view of statistics, such a sequence is equivalent to a discrete-valued
+time series for statistical identification and characterization of data sets as studied in
+financial series.
+
+

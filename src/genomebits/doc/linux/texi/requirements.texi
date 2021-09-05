@@ -1,0 +1,71 @@
+@node Requirements
+@chapter Requirements @code{genomebits}
+
+@menu
+* Hardware and Software::
+* Copyright::
+@end menu                       
+
+
+
+@node Hardware and Software
+@section Hardware & Software
+
+As of this writting @value{update-month}, @code{genomebits} @*
+
+@itemize 
+@item runs on any Laptop PC 64 bits running Ubuntu Linux O.S.
+@*
+@item The '@code{genomebits}' software is 6.4 MB in size, and it can 
+be downloaded in the form of a Debian package '@code{genomebit-1.0.x-Linux.deb}',
+from GitHub - @code{genomebits}.
+@*
+@end itemize
+
+@code{genomebits} can be used under the License below:
+
+@sp 2
+
+@menu
+* Copyright::
+@end menu
+
+
+@node Copyright
+@subsection Copyright 
+
+
+@cartouche
+@sp 1
+@ @ @ @ @ @b{Copyright @copyright{} @code{genomebits}}
+@sp 1
+
+Permission to use, copy, and distribute the @code{genomebits} software and its documentation 
+for educational purposes without fee is hereby granted, provided that the above 
+copyright notice appear in all copies and that both that copyright notice and this 
+permission notice appear in supporting documentation.
+
+Permission to modify the software is granted, but not the right to distribute the 
+complete modified source code. Modifications are to be distributed as patches to 
+the released version. Permission to distribute binaries produced by compiling 
+modified sources is granted, provided you
+
+@enumerate
+@item distribute the corresponding source modifications from the released version 
+in the form of a patch file along with the binaries,
+@item add special version identification to distinguish your version in addition 
+to the base release version number,
+@item provide your name and address as the primary contact for the support of 
+your modified version, and
+@item retain our contact information (@code{GitHub - genomebits}) in regard to use of the 
+@code{genomebits} base software.
+@end enumerate 
+
+Permission to distribute the released version of any @code{genomebits} code along with 
+corresponding source modifications in the form of a patch file is granted with 
+same provisions 2 through 4 for binary distributions.
+
+This software/application is provided "@emph{as is}" without any express or implied warranty.
+@end cartouche
+
+
