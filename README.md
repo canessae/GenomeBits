@@ -1,2 +1,10 @@
-# GenomeBits
-We are here developing and documenting the open version of the source code (scripts) used for a signal analysis of sequenced genome. In this study we deal with a new type of finite alternating sum series having independently distributed terms associated with binary (0,1) indicators for the nucleotide bases to characterise isolates. Our original method provides additional information to alternative conventional Similarity comparisons and Discrete Fourier transformation approaches. This new method could help in genome variants surveillance -work is in progress.
+GenomeBits: "A Tool for Uncovering Characteristics Signals from Genome Sequences"
+It is a Graphics User Interface (GUI) to the signal analysis of complete genome sequences according to its progression along the nucleotide bases position. This method for uncovering distinctive patterns in the intrinsic data organization of genome sequences is based on a finite alternating sum series having independently distributed terms associated with binary (0,1) indicators for the nucleotide bases A,C,T,G. The GUI runs under Linux Ubuntu O.S., and it can be useful to study, for example, the dynamics of Human CoV-2 genome variants using available GISAID FASTA data.
+
+In order to install GenomeBits, click on the the genomebits (.deb) package available from "Releases" or from a term type the command: 
+    sudo dpkg -i genomebits-1.0.x-Linux.deb
+A genomebits launcher icon will appear in your Show Applications of Linux Ubuntu Desktop. The sources can also be found here.
+See the (PDF or Texi) Manual for detailed information on install, uninstall, usage, examples...
+
+
+
