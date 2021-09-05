@@ -6,7 +6,7 @@ In order to install GenomeBits, click on the the genomebits (.deb) package avail
     sudo dpkg -i genomebits-1.0.x-Linux.deb
 
 A genomebits launcher icon will appear in your Show Applications of Linux Ubuntu Desktop. The sources can also be found here.
-See the (PDF or Texi) Manual for detailed information on install, uninstall, usage, examples...
+See the PDF Manual for detailed information on install, uninstall, usage, examples...
 
 
 
