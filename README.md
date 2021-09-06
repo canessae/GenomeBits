@@ -5,7 +5,7 @@ In order to install GenomeBits, click on the the genomebits (.deb) package avail
     sudo dpkg -i genomebits-1.0.x-Linux.deb
 
 A genomebits launcher icon will appear in your Show Applications of Linux Ubuntu Desktop. The sources can also be found here.
-See the PDF Manual for detailed information on install, uninstall, usage, examples...
+See the PDF Manual for detailed information on install, uninstall, usage, examples... https://github.com/canessae/GenomeBits/blob/main/genomebits_manual.pdf
 
 This signal analysis method was published in: Genes 2021; 12(7):973 –doi.org/10.3390/genes12070973 avaiable at -> GenomeBits/doc/
 
